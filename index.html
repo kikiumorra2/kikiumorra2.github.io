@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lukeria Petrunina</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #444;
+            line-height: 1.6;
+            margin: 0;
+            background: white;
+        }
+
+        .wrapper {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 25px;
+
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 60px;
+        }
+
+        /* LEFT SIDE */
+
+        .sidebar {
+            text-align: left;
+        }
+
+        .sidebar img {
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .sidebar p {
+            margin: 4px 0;
+        }
+
+        .sidebar .links {
+            margin-top: 20px;
+        }
+
+        .sidebar .links a {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* MAIN CONTENT */
+
+        main {
+            max-width: 600px;
+        }
+
+        h2 {
+            color: #222;
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ddd;
+            margin: 35px 0;
+        }
+
+        a {
+            color: #267CB9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .news li {
+            margin-bottom: 10px;
+        }
+
+        .publication {
+            margin-bottom: 18px;
+        }
+
+        footer {
+            font-size: 13px;
+            color: #888;
+            margin-top: 40px;
+        }
+
+        /* PHONE / SMALL SCREEN */
+
+        @media (max-width: 700px) {
+            .wrapper {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                margin-top: 25px;
+            }
+
+            .sidebar {
+                text-align: center;
+            }
+
+            main {
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+<div class="wrapper">
+
+    <!-- LEFT COLUMN -->
+    <aside class="sidebar">
+
+        <!-- Put your photo in the images folder -->
+        <img src="images/profile.jpg" alt="Lukeria Petrunina">
+
+        <h1>Lukeria Petrunina</h1>
+
+        <p>Research Assistant</p>
+        <p>Department of Linguistics</p>
+        <p>New York University</p>
+
+        <div class="links">
+            <a href="mailto:lp2807@nyu.edu">Email</a>
+        </div>
+
+    </aside>
+
+
+    <!-- RIGHT COLUMN -->
+    <main>
+
+        <section>
+            <h2>About</h2>
+
+            <p>
+                Hello, I am a research assistant at the
+                <a href="https://caplabnyu.github.io/">
+                    Caplab
+                </a>
+                at New York University.
+            </p>
+
+            <p>
+                I graduated from NYU in May, 2026 with BA in Linguistics and Mathematics.
+            </p>
+
+            <p>
+                My research interests lie at the intersection of computational linguistics, psycholinguistics, and cognitive science. I am particularly interested in comparing model-derived representations with theories of syntax and sentence processing, as well as understanding how linguistic representations generalize across languages and in bilingual processing.
+            </p>
+        </section>
+
+
+        <hr>
+
+
+        <section>
+            <h2>News</h2>
+
+            <ul class="news">
+
+                <li>
+                    <strong>June 2026</strong> —
+                    Joined the Computation and Psycholinguistics Lab at NYU.
+                </li>
+
+            </ul>
+        </section>
+
+
+        <hr>
+
+       
+
+        <footer>
+            Hosted on GitHub Pages
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+
+</html>
